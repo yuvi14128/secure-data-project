@@ -1,0 +1,944 @@
+About fog.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style2 {color: #FF0000}
+.style3 {font-size: 24px; font-weight: bold; color: #FF0000; }
+-->
+</style>
+</head>
+
+<body bgcolor="#0099FF">
+<form id="form1" name="form1" method="post" action="">
+  <table width="111%" height="204" border="5">
+    <tr>
+      <td height="190"><img src="images/Nicolas-Sassoon-FOG_title.gif" alt="ABOT FOG" width="833" height="186" /></td>
+    </tr>
+  </table>
+  <table width="105%" height="408" border="1">
+    <tr>
+      <td valign="top"><p class="style1">&nbsp;</p>
+      <p class="style1 style2"><u>ABOUT FOG COMPUTING</u></p>
+      <p align="justify" class="style1">We propose a completely different approach to securing the cloud using decoy information technology, that we have come to call Fog computing. We use this technology to launch disinformation attacks against malicious insiders, preventing them from distinguishing the real sensitive customer data from fake worthless data. </p>
+      <p align="justify" class="style3"><u>USES:</u></p>
+      <p align="justify" class="style1">Fog computing to prevent attacks such as the Twitter attack, by deploying decoy information within the Cloud by the Cloud service customer and within personal online social networking profiles by individual users.</p></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
+Main page.html:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style3 {
+	font-size: x-large;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #000000;
+}
+.style4 {
+	color: #00CCFF;
+	background-color: #000000;
+}
+.style27 {color: #0099FF; font-weight: bold; font-style: italic; font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+.style28 {
+	color: #0099CC;
+	font-size: 24px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style29 {color: #FF0000}
+.style30 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 24px;}
+-->
+</style>
+</head>
+
+<body>
+<form bgcolor="#000000" id="form1" name="form1" method="post" action="">
+  <table width="143%" border="5">
+    <tr>
+      <td height="166"><label>
+        
+        <div align="left" class="style4">
+          <div align="center"><span class="style3"> 
+            <label>
+            <input type="image" name="imageField" src="images/logo.png" />
+            </label>
+            SECURE DATA IN CLOUD USING OFFENSIVE DECOY TECHNOLOGY </span></div>
+        </div>
+      </label></td>
+    </tr>
+  </table>
+  <label></label>
+  <div align="right">
+    <p>&nbsp;</p>
+    <table width="120%" height="347" bgcolor="#000000" border="1">
+      <tr>
+        <td width="51%" height="341"><label>
+          <input type="image" name="imageField2" src="images/Nicolas-Sassoon-FOG_title.gif" />
+        </label></td>
+        <td width="49%"><p>&nbsp;</p>
+          <table width="92%" height="226" border="0" align="left">
+          <tr>
+              <td height="52"><div align="justify"><span class="style27"><a href="about fog.html"><u>ABOUT FOG COMPUTING</u></a> </span></div></td>
+          </tr>
+          <tr>
+              <td height="57"><div align="justify"><span class="style27"><a href="login.html"><u>USER AUTHENTICATION </u></a></span></div></td>
+          </tr>
+          <tr>
+              <td height="43"><div align="justify"><span class="style27"><a href="Cloud Registration.html"><u>CLOUD ID ALLOCATION </u></a></span></div></td>
+          </tr>
+          <tr>
+            <td height="64"><div align="justify"><span class="style27"><u>LOGOUT</u></span></div></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <table width="100%" height="80" bgcolor="#ffffff" border="0">
+      <tr>
+        <td height="87"><span class="style28"></span><span class="style28">
+          <marquee> 
+          </marquee>
+</span> <span class="style29">
+<marquee>
+          </marquee>
+</span>
+<marquee><div align="left" class="style29"><span class="style30">SECURE DATA IN CLOUD USING OFFENSIVE DECOY TECHNOLOGY </span></div>
+        </marquee> </td>
+      </tr>
+    </table>
+  </div>
+</form>
+</body>
+</html>
+User registration.html
+<html>
+<head>
+<title>User Registration</title>
+<script type="text/javascript">
+function registervalid(form)
+        {
+var space = /^[\ ]*$/;
+var alpha = /^[a-zA-Z]+$/;
+var num1= /^[0-9]*$/;
+
+
+           var name=form.name_tb.value;
+           var userid=form.UserID_tb.value;
+           var pass=form.pass_tb.value;
+           var pass1=form.pass1_tb.value;
+           var gender=form.gender_tb.value;
+           var add=form.address_tb.value;
+           var no=form.contact_tb.value;
+          
+         if(space.test(name))
+     
+               {
+                   alert("Enter alphabets Only");
+                   return false;
+               }
+                   
+         
+               else if(space.test(userid))
+                   {
+                       alert("please enter your user ID");
+                       return false;
+                   }
+                else if(space.test(pass))
+                       {
+                           alert("please enter your password");
+                           return false;
+                       }
+                else if(space.test(pass1))
+                           {
+                               alert("please enter your confirm password");
+                               return false;
+                           }
+                
+                    else if(space.test(add))
+                            {
+                                alert("Please your address");
+                                return false;
+                            }
+                       
+                         else if(isNaN.test(no))
+                            {
+                                alert("Enter number only");
+                                return false;
+                            }
+                         return true;
+}
+    </script>
+        <style type="text/css">
+            <!--
+            .style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	width: auto;
+	color: #CC0000;
+	font-size: 18px;
+            }
+.style30 {color: #FFFFFF}
+.style31 {
+	color: #0099FF;
+	font-size: 36px;
+	font-weight: bold;
+}
+.style32 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 18;
+	background-color: #FFFFFF;
+}
+.style36 {font-size: 12}
+.style43 {font-size: 18px}
+.style53 {font-size: 18; color: #FF0000; }
+.style74 {font-size: 16px; color: #000000; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.style76 {width: auto; color: #000000; font-size: 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.style79 {font-size: 16px; font-family: Arial, Helvetica, sans-serif; width: auto; color: #000000;}
+.style81 {color: #FF0000; font-weight: bold; font-size: 18; }
+.style83 {color: #FF0000; font-weight: bold; font-size: 18; }
+            -->
+        </style>
+</head>
+<body bgcolor="#0099ff" >
+    <span class="style30"></span>
+    <form name="User Reg_form" method="post" action="User Registration.jsp" onsubmit=" return registervalid(this);">
+<table width="100%" height="93" bgcolor="#000000" border="5">
+  <tr>
+    <td height="87"><span class="style31">
+      <marquee>USER REGISTRATION</marquee> </span></td>
+  </tr>
+</table>
+
+<table width="100%" height="515" border="0">
+  <tr>
+    <td width="45%" height="511"><label>
+      <input name="imageField" type="image" src="images/ccc.jpg" align="right">
+    </label></td>
+    <td width="55%"><TABLE width="348" height="496" border="1" bgcolor="#0099FF" align="center">
+      <TR>
+        <TD width="150" height="50" align="left" class="style74"><span class="style49"><span class="style47"><span class="style43">
+          <div align="left" class="style79">Name          
+              </LABEL>          
+          </div></TD>
+        <TD width="188" align="left"><input name="name_tb" type="text" id="name_tb" style="background:#ffffff;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" value="" size="25"></TD>
+      </TR>
+      <TR>
+        <TD height="40" align="left"><span class="style76">
+          <LABEL for="user ID_lb" >User ID<br>
+            <br>
+          </LABEL>
+        </span></TD>
+        <TD align="left"><INPUT name="User ID_tb" type="text" id="UserID_tb" style="background:#ffffff;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" size="25"></TD>
+      </TR>
+      <TR>
+        <TD height="40" align="left"><span class="style76">
+          <LABEL for="pass_lb" >Password<br>
+            <br>
+          </LABEL>
+        </span></TD>
+        <TD align="left"><INPUT name="pass_tb" type="password" id="pass_tb" style="background:#ffffff;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" size="25"></TD>
+      </TR>
+      <TR>
+        <TD height="40" align="left" class="style1"><span class="style74">
+          <LABEL for="pass1_lb" >Confirm Password<br>
+            <br>
+            </LABEL>
+        </span> </TD>
+        <TD align="left"><INPUT name="pass1_tb" type="password" id="pass1_tb" style="background:#ffffff;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" size="25"></TD>
+      </TR>
+      <TR>
+        <TD height="100" align="left"><span class="style76">
+          <LABEL for="gender_lb" >Gender
+          <br>
+          </LABEL>
+        </span></TD>
+        <TD align="left"><p class="style36">
+            <label></label>
+        </p>
+            <p class="style36">
+              <label>
+              <input type="radio" name="gender_tb" value="Male" checked>
+              <span class="style81">Male</span></label>
+              <span class="style53">
+              <label>
+              <input type="radio" name="gender_tb" value="Female">
+              </label>
+              </span><span class="style53"><label> </label>
+              </span>
+              <label><span class="style83"><strong>Female</strong></span></label>
+              <span class="style83">
+              <label></label>
+              </span><br>
+              <label></label>
+              <br>
+              <br>
+              <label></label>
+              <label></label>
+          </p></TD>
+      </TR>
+      <TR>
+        <TD height="40" align="left"><span class="style76">
+          <LABEL for="address_lb" >Address<br>
+            <br>
+          </LABEL>
+        </span></TD>
+        <TD align="left"><span class="style36">
+          <label>
+            <INPUT name="address_tb" type="text" id="address_tb" style="background:#ffffff;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" size="25">
+            </label>
+        </span></TD>
+      </TR>
+      <TR>
+        <TD height="45" align="left"><span class="style76">
+          <LABEL for="contact_lb" ><br>
+          </LABEL>
+          Contact No </span></TD>
+        <TD align="left"><span class="style36">
+          <label><br>
+          <INPUT name="contact_tb" type="text" id="contact_tb" style="background:#ffffff;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" size="25">
+            </label>
+        </span> </TD>
+      </TR>
+      <TR>
+        <TD height="80" align="center" ><p class="style43">&nbsp;
+          </p>
+          <p class="style43">
+            <input name="Submit" type="submit" value="SUBMIT" size="25" bgcolor="white" class="style32">
+          </p>
+          <p class="style43">&nbsp;</p></TD>
+        <TD height="111" align="left" ><div align="center"><span class="style36">
+          <input name="Cancel" type="reset" class="style32" id="Cancel" value="CANCEL" bgcolor="white">
+        </span></div></TD>
+      </TR>
+    </TABLE></td>
+  </tr>
+</table>
+    </form>
+</body>
+</html>
+Login.html:
+<html>
+<head>
+<title>Login Page</title>
+<style type="text/css">
+<!--
+.style3 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style4 {font-size: 18px}
+.style5 {font-family: "Times New Roman", Times, serif}
+.style6 {
+	color: #9933FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-decoration: blink;
+	background-color: #FFFFFF;
+	text-transform: capitalize;
+}
+.style9 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #00CCFF;
+}
+.style10 {
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+.style15 {
+	color: #FF0000;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}
+.style18 {
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0099FF;
+	font-size: 18px;
+}
+.style19 {font-family: Arial, Helvetica, sans-serif; color: #0099FF; background-color: #000000;}
+-->
+</style>
+</head>
+<body bgcolor="#0066FF">
+	<form method="post" action="login.jsp">
+		
+		<center>
+		  <hr>
+		  <table width="100%" height="94" border="1" bgcolor="#000000">
+            <tr>
+              <td><span class="style9"><marquee>
+                <span class="style19">USER AUTHENTICATION</span>
+              </marquee>
+              </span></td>
+            </tr>
+          </table>
+		  <h2 align="left">&nbsp;</h2>
+		  <p>&nbsp;</p>
+		</center>
+		<table width="773" height="403" align="center" bgcolor="white">
+			<tr><td width="453" height="397"><img src="images/login_img.gif" alt="Login" width="450" height="351"/></td>
+<td width="308"><label></label>
+  <TABLE width="308" height="363" align="left">
+						<TR><TD width="100" height="47" align="left"><LABEL for="uname"><strong><span class="style3">User ID</span><br>
+						</strong></LABEL></TD><TD width="196" align="left"><INPUT name="UserID" type="text" id="UserID" style="background:#000000;color:#000000;border-color:#000000;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';" size="25"></TD></TR>
+						<TR>
+						  <TD height="68" align="left"><span class="style4"> <span class="style3">
+						    
+						     
+						    <LABEL for="Pass" ><strong>Password</strong></LABEL>
+						      						    </span> </span></TD>
+						  <TD align="left"><INPUT type="password" size="25" name="password" style="background:#000000;color:#000000;border-color:#000000;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';"></TD></TR>
+						<TR><TD align="right"><p align="center"><INPUT name="login" TYPE="submit" class="style10" id=" login" VALUE="Login" >
+					      </p>
+						    </TD>
+							<TD align="left"><p align="left">
+							  <input name="cancel" type="reset" class="style10" id="cancel" value="Cancel" >
+							  </p>
+						  </TD></TR>
+						<TR>
+						  <TD height="186" align="right"><p align="left">&nbsp;</p>
+						    <p align="left">&nbsp;</p>
+						    <p align="left">&nbsp;</p>
+					      <p align="left">&nbsp;</p></TD>
+						  <TD align="left"><p>&nbsp;</p>
+						    <p align="center"><strong><span class="style5"><u>
+						      <input name="new user" type="button" class="style18" id="new user" value="New User" onclick="window.location.href='User Registration.html'">
+				            </u></span></strong></p>
+						    <p><strong><marquee>
+						      </strong><span class="style6"><span class="style15">if u r new User? Register Here</span></span><strong><span class="style6"><span class="style5">
+						      </marquee>
+				              </span></span> </strong></p></TD>
+		  </TR>
+		</TABLE>				</td>
+			</tr>
+      </table>
+	</form>
+</body>
+	
+</html>
+Cloud server.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	color: #0099FF;
+}
+.style12 {
+	font-size: 24px;
+	font-style: italic;
+	color: #0099FF;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#000000">
+<form id="form1" name="form1" method="post" action="">
+  <p>&nbsp;</p>
+  <table width="100%" height="27%" border="1" bgcolor="#000000">
+    <tr>
+      <td height="104"><span class="style11">
+        <marquee>
+        </marquee>
+        </span>
+          <marquee>
+            <div align="center"><span class="style11">CLOUD SERVER</span></div>
+        </marquee>
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="32%" height="240" border="0" align="center">
+    <tr>
+      <td height="97"><div align="center"><span class="style12"><a href="Cloud uploading.html" class="style12">Secure Uploading</a> </span></div></td>
+    </tr>
+    <tr>
+      <td height="71" class="style12"><div align="center"><a href="Cloud downloading.html" class="style12">Secure Downloading </a></div></td>
+    </tr>
+    <tr>
+      <td height="62" class="style12"><div align="center"><a href="decoy files.html" class="style12">View Decoy Files </a></div></td>
+    </tr>
+  </table>
+  <div align="center"></div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</form>
+</body>
+</html>
+Cloud uploading.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 18px;
+	color: #FF0000;
+	background-color: #000000;
+}
+.style6 {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.style7 {font-size: 36px; color: #0099FF; background-color: #000000; }
+.style10 {color: #000000; font-weight: bold;}
+.style11 {font-size: 18px; }
+.style12 {	font-size: 18px;
+	background-color: #CCCC33;
+}
+.style9 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0099FF;
+}
+.style14 {color: #000000; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+.style16 {color: #0099FF; font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+.style18 {
+	color: #0099FF;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+}
+-->
+</style>
+</head>
+    <script>
+    function storevalid(form)
+{
+alert("Your Encrypted data stored successfully in cloud server");
+}
+</script>
+<body bgcolor="#000000">
+<form action="upload.jsp" method="post"  name="form1"  onSubmit="return storevalid(this);>
+ 
+ <table width="100%" height="30%" border="1" bgcolor="#ffffff">
+    <tr>
+      <td height="110"><div align="center">
+        <p class="style7"><marquee>
+        SECURE UPLOADING 
+        </marquee></p>
+      </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="65%" height="95%" border="0" align="left">
+    <tr>
+      <td width="4%" height="465">&nbsp;</td>
+      <td width="96%"><table width="123%" height="114" border="0">
+        <tr>
+          <td width="39%" height="58"><div align="right"><strong><span class="style16">Cloud ID </span></strong></div></td>
+          <td width="61%"><strong>
+            <label>
+            <input type="text" name="id" />
+            </label>
+          </strong></td>
+        </tr>
+        <tr>
+          <td height="48"><div align="right"><strong><span class="style16">Select a File to Upload </span></strong></div></td>
+          <td><label>
+            <input name="browse" type="file" >
+           
+          </label></td>
+        </tr>
+
+      </table>      
+        <table width="99%" height="129" border="0" align="center">
+          <tr>
+            <td width="38%" height="51"><div align="right"><span class="style9">Security Questions </span></div></td>
+            <td width="62%"><label>
+              <select name="select" class="style10">
+                <option>&lt;-------Choose Your Questions-------&gt;</option>
+                <option>What is your favourite book</option>
+                <option>What is your favourite spot</option>
+                <option>what is your favourite teacher</option>
+                <option>Tell ur best friend name</option>
+              </select>
+            </label></td>
+          </tr>
+          <tr>
+            <td height="67"><span class="style7">
+                <label>
+                </span>
+                <div align="left" class="style11">
+                  <div align="right"><span class="style16">Answer</span></div>
+              </div>
+              <span class="style12">
+                </label>
+              </span></td>
+            <td><div align="left">
+                <label>
+                <input name="answer1" type="text" size="30" />
+                </label>
+            </div></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <table width="43%" height="67" border="5" align="center" class="style1">
+        <tr>
+          <td width="54%" height="53"><label>
+            <div align="center">
+              <input name="Submit2" type="submit" class="style1" value="STORE" />
+              </div>
+          </label></td>
+          <td width="46%"><label>
+            <div align="center">
+              <input name="Submit4" type="submit" class="style1" value="CANCEL" />
+              </div>
+          </label></td>
+        </tr>
+      </table>
+       <p>&nbsp;</p>
+      <p>&nbsp;</p></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</form>
+</body>
+</html>
+Cloud downloading.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 36px;
+	color: #0099FF;
+}
+.style5 {font-size: 16px; font-weight: bold; }
+.style7 {font-size: 18px; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body bgcolor="#0099FF">
+<form id="form1" name="form1" method="post" action="">
+  <table width="100%" height="35%" border="1" bgcolor="#000000">
+    <tr>
+      <td height="99"><span class="style2">
+      <marquee>CLOUD RETRIEVAL</marquee> </span></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table width="60%" border="1" align="center" bgcolor="#FFFFFF">
+    <tr>
+      <td width="34%" height="47"><span class="style7">Cloud ID </span></td>
+      <td width="66%"><label>
+        <input type="text" name="textfield" />
+      </label></td>
+    </tr>
+    <tr>
+      <td height="44"><span class="style7">Security Questions </span></td>
+      <td><select name="select" class="style5">
+        <option>&lt;-------Choose Your Questions-------&gt;</option>
+        <option>What is your favourite book</option>
+        <option>What is your favourite spot</option>
+        <option>what is your favourite teacher</option>
+        <option>Tell ur best friend name</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><span class="style7">Answer</span></td>
+      <td><label>
+        <input type="text" name="textfield3" />
+      </label></td>
+    </tr>
+    <tr>
+      <td height="42"><span class="style7">Select a File to retrieve </span></td>
+      <td><label>
+        <input type="text" name="textfield2" />
+        <input type="submit" name="Submit" value="Save" />
+      </label></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table width="17%" border="0" align="right">
+    <tr>
+      <td><span class="style7"><a href="main page.html"><u>Back to Main page</u></a> </span></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</form>
+</body>
+</html>
+User Regiistration.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page language="java" import="java.io.*"%>
+<%@page language="java" import="java.sql.*" %>
+<%!
+PreparedStatement ps=null;
+int contact_no=0;
+%>
+<%
+String a = request.getParameter("name_tb");
+String b = request.getParameter("UserID_tb");
+String c = request.getParameter("pass_tb");
+String d = request.getParameter("pass1_tb");
+String e = request.getParameter("gender_tb");
+String f = request.getParameter("address_tb");
+String g = request.getParameter("contact_tb");
+String h;
+contact_no=Integer.parseInt(g);
+try
+ {
+ 
+if(c.equals(d))
+{
+    h=c;
+    out.println("\n Your password is : " +h);
+    Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+Connection conn=DriverManager.getConnection("jdbc:odbc:secure");
+Statement stt=conn.createStatement();   
+PreparedStatement ps=conn.prepareStatement("insert into user_reg1	(Name,UserID,Password,ConfirmPassword,Gender,Address,Contact)values('"+a+"','"+b+"','"+c+"','"+d+"','"+e+"','"+f+"','"+contact_no+"')");
+ps.executeUpdate();
+
+%>
+ <script type="text/javascript" bgcolor="blue">
+ alert("User Registration Created Successfully");
+
+
+ </script>
+             
+<%
+
+}
+ 
+else
+{
+out.println("\n Your Password is :" +c);
+out.println("\n\n\n Your Conform Password is :" +d);   
+    
+%>
+ <script type="text/javascript">
+  alert("Your Password is mismatching");
+  </script>
+  <%
+}
+}
+catch(Exception ex)
+ {
+    %>
+    <script type="text/javascript">
+        alert(ex.toString());
+    </script>
+    <%
+    out.println("reg: Exception :"+ex.toString());
+}
+%>
+
+Cloud registration.jsp:
+<%-- 
+    Document   : register
+    Created on : Nov 25, 2011, 4:54:58 PM
+    Author     : User
+--%>
+<%@page import="java.util.Random"%>
+<%@page import="java.security.SecureRandom"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page language="java" import="java.io.*"%>
+<%@page language="java" import="java.sql.*" %>
+<!DOCTYPE html>
+<%!
+
+
+int file_amount=0;
+int count;
+
+PreparedStatement pst=null;
+%>
+
+<%
+String aa=request.getParameter("UserID");
+String bb=request.getParameter("size");
+String cc=request.getParameter("amount");
+String dd=request.getParameter("pin");
+String ee=request.getParameter("passw");
+
+file_amount=Integer.parseInt(cc);
+Random ran=new Random();
+int cloudid = (int)(Math.random() * 8847);
+try
+ {
+       Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");              
+    Connection con=DriverManager.getConnection("jdbc:odbc:secure");
+    Statement st=con.createStatement();   
+   
+    PreparedStatement pst=con.prepareStatement("insert into cloud_reg2	(UserID,size,amount,pin,password,cloudid)values('"+aa+"','"+bb+"','"+file_amount+"','"+dd+"','"+ee+"','"+cloudid+"')");
+         int count=pst.executeUpdate();
+         if(count==1)
+                         {
+             out.println("Your Cloud ID is  " +cloudid);
+                         }
+         
+          %>
+             <script type="text/javascript">
+                 alert("Cloud Allocation generated successfully");
+             </script>
+             <%
+                 
+                             }
+catch(Exception ex)
+               {
+    out.println(""+ex);
+       
+ %>
+             
+        <script type="text/javascript">
+            alert("Not");
+        </script>
+       
+<%
+}
+%>
+Login.jsp
+<%-- 
+    Document   : index
+    Created on : Jan 12, 2013, 9:50:58 PM
+    Author     : udaya
+--%>
+<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*" %>
+<%
+
+Connection conn= null;
+Statement st = null;
+ResultSet rst=null;
+String r = request.getParameter("UserID");
+String t = request.getParameter("password");
+String z="";
+String y="";
+try
+{
+Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+conn=DriverManager.getConnection("jdbc:odbc:secure");
+st = conn.createStatement();
+rst = st.executeQuery("SELECT  UserID,Password FROM user_reg1 where UserID ='"+r+"' and Password='"+t+"'");
+while (rst.next())
+{
+z =rst.getString("UserID");
+y =rst.getString("Password");
+out.println("ID"+z);
+out.println("pass"+y);
+}
+if(r.equals(z) && t.equals(y))
+{
+    response.sendRedirect("cloud server.html");
+
+}
+else
+{
+    %>
+    <strong><font color="#000000">
+<label for="UserID">&quot;Entered username or password is incorrect. !!!! &quot;</label></font></strong>
+<br><A HREF="login.html"><font color="#00ff99"><strong>LOGIN AGAIN</strong></font></A>
+
+<%}
+    
+}
+catch(Exception e)
+{
+out.println("Query Not Executed");
+}
+
+
+%>
+Upload.jsp
+
+<%@page language="java" import="java.io.*"%>
+<%@page language="java" import="java.sql.*" %>
+<%@page import="Encryption.encrypt"%>
+<%
+String cloudid1=request.getParameter("id");
+String path=request.getParameter("browse");
+String questions=request.getParameter("select");
+String answers=request.getParameter("answer1");
+
+int  cloud_id=Integer.parseInt("cloudid1");
+
+File file = new File("path");
+    BufferedReader br=new BufferedReader(new FileReader(file));
+    String fildata="";
+    String str="";
+
+while((str=br.readLine())!=null)
+{
+    fildata+=str;
+}
+    out.print("fildata");
+String d= new encrypt().enc(fildata);
+ 
+     
+       try
+                       {                           
+    Class.forName("sun.jdbc.odbc.JdbcOdbcDriver"); 
+    Connection con=DriverManager.getConnection("jdbc:odbc:secure");
+    Statement st=con.createStatement();   
+   
+    PreparedStatement pst=con.prepareStatement("insert into store(cloudid,filepath,question,answer)values('"+cloud_id+"','"+d+"','"+questions+"','"+answers+"')");
+     pst.executeUpdate();
+     %>
+     <script type="text/javascript">
+                 alert("Your data successfully stored in cloud server");
+             </script>
+     <%
+         }
+ catch(Exception ex)
+               {
+    out.println(""+ex);
+       }
+           %>
